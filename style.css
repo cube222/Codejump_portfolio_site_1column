@@ -24,13 +24,8 @@ p {
   margin: 0;
 }
 
-img {
-  /* vertical-align: bottom; */
-}
-
 
 /* header */
-
 header {
   padding-top: 16px;
   text-align: center;
@@ -45,11 +40,6 @@ ul {
 }
 
 /* hero */
-
-.hero {
-
-}
-
 .hero img {
   display: block;
   width: 100%;
@@ -60,12 +50,8 @@ ul {
 }
 
 /* About */
-
-
-
 .about {
   max-width: 630px;
-  /* margin: 0 28px; */
   padding: 80px 28px 60px;
 }  
 
@@ -90,4 +76,33 @@ address a {
 
 address p {
   margin-top: 1px;
+}
+
+
+/* Works */
+
+.works {
+  padding-bottom: 48px;
+}
+
+.works h2 {
+  text-align: center;
+}
+
+.work {
+  padding: 40px 20px;
+  text-align: center;
+
+}
+
+.work img {
+  max-width: 630px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  gap: 30px;
+}
+
+article + article {
+  margin-top: 20px;
 }
