@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+
+
+/* common */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 8px 0 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+
+/* header */
+
+header {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* hero */
+
+.hero {
+    
+}
+
+.hero img {
+  width: auto;
+  height: 420px;
+
+}
