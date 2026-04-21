@@ -8,21 +8,23 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
 }
 
 h1 {
-  margin: 8px 0 0;
+  margin: 0;
+  font-size: 0;
 }
 
 img {
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 }
 
 
 /* header */
 
 header {
+  padding-top: 16px;
   text-align: center;
 }
 
@@ -37,11 +39,14 @@ ul {
 /* hero */
 
 .hero {
-    
+
 }
 
 .hero img {
-  width: auto;
+  display: block;
+  width: 100%;
+  max-width: 610px;
   height: 420px;
-
+  object-fit: cover;
+  margin: 0 auto;
 }
