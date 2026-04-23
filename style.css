@@ -103,9 +103,32 @@ address p {
   gap: 30px;
 }
 
-article + article {
+.works article + .works article {
   margin-top: 20px;
 }
 
 
+/* news */
 
+.news {
+  padding: 0 20px;
+}
+
+.news h2 {
+  text-align: center;
+}
+
+.news-item {
+  padding: 40px 0 40px;
+}
+
+.news article {
+  border-top: 1px solid #ccc;
+  padding: 16px 18px;
+  font-size: 14px;
+}
+
+.news article:last-child {
+  border-bottom: 1px solid #ccc;
+
+}
