@@ -111,7 +111,7 @@ address p {
 /* news */
 
 .news {
-  padding: 0 20px;
+  padding: 0 20px ;
 }
 
 .news h2 {
@@ -119,7 +119,7 @@ address p {
 }
 
 .news-item {
-  padding: 40px 0 40px;
+  padding: 40px 0 72px;
 }
 
 .news article {
@@ -131,3 +131,57 @@ address p {
 .news article:last-child {
   border-bottom: 1px solid #ccc;
 }
+
+
+/* contact */
+
+.contacts h2 {
+  text-align: center;
+}
+
+label {
+  font-size: 14px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 160px;
+  border: 1px solid #ccc;
+}
+
+.contact {
+  padding: 40px 20px;
+}
+
+form div + div {
+  margin-top: 8px;
+}
+
+.button  {
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 32px;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
