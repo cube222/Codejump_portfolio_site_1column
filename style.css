@@ -135,6 +135,10 @@ address p {
 
 /* contact */
 
+.contacts {
+  padding-bottom: 32px;
+}
+
 .contacts h2 {
   text-align: center;
 }
@@ -184,4 +188,17 @@ button:hover {
     background: white;
     color: black;
     border: 1px solid black;
+  }
+
+  /* footer */
+
+  footer {
+    height: 32px;
+    background: #222;
+    color: white;
+    text-align: center;
+  }
+
+  small {
+    font-size: 8px;
   }
