@@ -1,6 +1,6 @@
 # ポートフォリオサイト／1カラム
 
-## 概要
+## 参考元
 codejumpの模写サイトです。
 
 模写元：https://code-jump.com/portfolio1-menu/
