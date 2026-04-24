@@ -39,8 +39,13 @@ ul {
   margin: 10px 0;
 }
 
+li {
+  font-size: 13px;
+}
+
+
 /* hero */
-.hero img {
+.hero-sp {
   display: block;
   width: 100%;
   max-width: 610px;
@@ -49,11 +54,17 @@ ul {
   margin: 0 auto;
 }
 
+.hero-pc {
+  display: none;
+}
+
+
 /* About */
 .about {
-  max-width: 630px;
+  max-width: 848px;
   padding: 80px 28px 60px;
-}  
+  margin: 0 auto;
+}
 
 .about h2 {
   text-align: center;
@@ -92,18 +103,17 @@ address p {
 .work {
   padding: 40px 20px;
   text-align: center;
-
 }
 
 .work img {
-  max-width: 630px;
+  max-width: 600px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   gap: 30px;
 }
 
-.works article + .works article {
+.works article+.works article {
   margin-top: 20px;
 }
 
@@ -111,7 +121,7 @@ address p {
 /* news */
 
 .news {
-  padding: 0 20px ;
+  padding: 0 20px;
 }
 
 .news h2 {
@@ -147,10 +157,15 @@ label {
   font-size: 14px;
 }
 
+form div {
+  margin: 0 auto;
+}
+
+
 input {
   display: block;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   height: 40px;
   border: 1px solid #ccc;
 }
@@ -158,20 +173,22 @@ input {
 textarea {
   display: block;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   height: 160px;
   border: 1px solid #ccc;
 }
 
 .contact {
   padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-form div + div {
+form div+div {
   margin-top: 8px;
 }
 
-.button  {
+.button {
   text-align: center;
 }
 
@@ -185,20 +202,117 @@ button {
 }
 
 button:hover {
-    background: white;
-    color: black;
-    border: 1px solid black;
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* footer */
+
+footer {
+  height: 32px;
+  background: #222;
+  color: white;
+  text-align: center;
+}
+
+small {
+  font-size: 8px;
+}
+
+
+
+/* pc-mode */
+
+@media (min-width: 600px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 116px 32px 108px;
   }
 
-  /* footer */
+  /* hero */
+  .hero-sp {
+    display: none;
+  }
 
-  footer {
-    height: 32px;
-    background: #222;
-    color: white;
+  .hero-pc {
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    height: 420px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .hero {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     text-align: center;
   }
 
-  small {
-    font-size: 8px;
+  /* About */
+  li {
+    font-size: 14px;
   }
+
+  .about {
+    max-width: 920px;
+    padding: 80px 28px 120px;
+    margin: 0 auto;
+  }
+
+  .about h2 {
+    margin-bottom: 72px;
+  }
+
+
+  /* Works */
+
+  .work {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 72px 38px 100px;
+  }
+
+  .work article {
+    width: calc((100% - 60px) / 3);
+  }
+
+  /* news */
+  .news-item {
+    padding: 40px 0 72px;
+    display: block;
+
+  }
+
+  .news-item article {
+    display: flex;
+    gap: 10%;
+    max-width: 832px;
+    margin: 0 auto;
+  }
+
+  /* contact */
+
+
+  form .form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact {
+    max-width: 860px;
+  }
+
+}
